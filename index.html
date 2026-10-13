@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Surat pengunduran diri profesional dari proyek Pinggir Coffee Shop dengan transparansi keuangan dan panel pengaturan lokal."
+    />
+    <title>Surat Pengunduran Diri — Proyek Pinggir Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="navbar container" aria-label="Navigasi utama">
+          <a href="#top" class="brand" aria-label="Pinggir Coffee Shop">
+            <span class="brand-badge brand-badge-small" aria-hidden="true">
+              <img src="assets/logopinggir-removebg-preview.png" alt="Logo Pinggir Coffee Shop" />
+            </span>
+            <span>PINGGIR COFFEE SHOP</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu">
+            <a href="#letter">Surat</a>
+            <a href="#finance">Transparansi Keuangan</a>
+            <a href="#statement">Pernyataan</a>
+            <a href="#letter" class="btn btn-primary nav-cta">Baca Surat</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero container" aria-labelledby="hero-title">
+          <div class="reading-progress" aria-hidden="true">
+            <span id="readingProgressText">0%</span>
+            <div class="progress-bar"><span id="progressBar"></span></div>
+          </div>
+
+          <div class="hero-copy reveal">
+            <p class="eyebrow">KEPUTUSAN PROFESIONAL</p>
+            <h1 id="hero-title">SEBUAH KEPUTUSAN PROFESIONAL</h1>
+            <h2>Surat Pengunduran Diri dari Proyek Pinggir Coffee Shop</h2>
+            <p class="hero-lead">
+              Setiap proyek membutuhkan perencanaan, komitmen, dan dukungan anggaran
+              yang seimbang. Ketika sumber daya yang tersedia tidak lagi memadai,
+              keputusan profesional perlu diambil dengan terbuka.
+            </p>
+            <div class="hero-actions">
+              <a href="#letter" class="btn btn-primary">Baca Pernyataan</a>
+              <a href="#finance" class="btn btn-secondary">Lihat Transparansi Keuangan</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="logo-badge hero-logo-badge" aria-label="Logo Pinggir Coffee Shop">
+              <img src="assets/logopinggir-removebg-preview.png" alt="Logo Pinggir Coffee Shop" />
+            </div>
+          </div>
+        </section>
+
+        <section id="letter" class="letter-section container">
+          <div class="section-heading">
+            <p class="eyebrow">Surat Resmi</p>
+            <h3>Surat Pengunduran Diri</h3>
+          </div>
+
+          <div class="letter-toolbar">
+            <button id="toggleLetter" class="btn btn-primary" type="button">Buka Surat</button>
+            <button id="fontDown" class="btn btn-secondary" type="button" aria-label="Kecilkan teks">Kecilkan Teks</button>
+            <button id="fontUp" class="btn btn-secondary" type="button" aria-label="Perbesar teks">Perbesar Teks</button>
+            <button id="copyLetter" class="btn btn-secondary" type="button">Salin Isi Surat</button>
+            <button id="printLetter" class="btn btn-secondary" type="button">Unduh / Cetak PDF</button>
+            <button id="settingsToggle" class="btn btn-muted" type="button" aria-expanded="false">Panel Pengaturan</button>
+          </div>
+
+          <aside id="settingsPanel" class="settings-panel hidden" aria-label="Panel pengaturan surat">
+            <div class="settings-row">
+              <label for="signerNameInput">Nama</label>
+              <input id="signerNameInput" type="text" value="Nama Penandatangan" maxlength="80" />
+            </div>
+            <div class="settings-row">
+              <label for="letterDateInput">Tanggal surat</label>
+              <input id="letterDateInput" type="text" value="13-10-2026" />
+            </div>
+            <div class="settings-row">
+              <label for="effectiveDateInput">Tanggal efektif</label>
+              <input id="effectiveDateInput" type="text" value="13-10-2026" />
+            </div>
+          </aside>
+
+          <div class="letter-card" id="letterCard">
+            <div class="letter-progress" aria-hidden="true">
+              <span>Progres membaca</span>
+              <strong id="letterProgressLabel">0%</strong>
+            </div>
+            <article class="letter-body" id="letterBody" aria-live="polite">
+              <div class="letter-header">
+                <p class="letter-title">SURAT PERNYATAAN PENGUNDURAN DIRI</p>
+              </div>
+
+              <div class="letter-meta">
+                <p>Kepada Yth.</p>
+                <p>Pihak Pengelola Pinggir Coffee Shop</p>
+                <p>di tempat.</p>
+              </div>
+
+              <div class="salutation">
+                <p>Dengan hormat,</p>
+              </div>
+
+              <div class="letter-paragraph">
+                <p>
+                  Melalui surat ini, saya menyampaikan pengunduran diri dari keterlibatan
+                  saya dalam proyek Pinggir Coffee Shop, terhitung sejak tanggal yang akan
+                  saya tentukan.
+                </p>
+                <p>
+                  Keputusan ini saya ambil setelah mempertimbangkan kondisi pelaksanaan
+                  proyek, kebutuhan operasional, serta anggaran yang tersedia.
+                </p>
+                <p>
+                  Dalam pelaksanaannya, anggaran yang tersedia dirasakan belum memadai
+                  untuk mendukung kebutuhan pekerjaan, ruang lingkup tanggung jawab, dan
+                  standar hasil yang diharapkan. Kondisi tersebut membuat keberlanjutan
+                  proyek menjadi sulit untuk dijalankan secara optimal apabila tidak
+                  terdapat penyesuaian anggaran maupun kesepakatan baru.
+                </p>
+                <p>
+                  Saya menghargai kesempatan, kepercayaan, dan pengalaman yang telah
+                  diberikan selama keterlibatan saya dalam proyek ini. Pengunduran diri
+                  ini bukan dimaksudkan untuk merendahkan pihak mana pun, melainkan
+                  merupakan keputusan profesional berdasarkan pertimbangan terhadap
+                  kelayakan pelaksanaan pekerjaan.
+                </p>
+                <p>
+                  Saya berharap pihak pengelola dapat melakukan evaluasi terhadap
+                  perencanaan anggaran dan ruang lingkup pekerjaan agar proyek dapat
+                  berjalan secara lebih realistis dan berkelanjutan.
+                </p>
+                <p>
+                  Apabila diperlukan, saya bersedia melakukan koordinasi terkait serah
+                  terima pekerjaan, dokumentasi, dan hal-hal lain yang masih menjadi
+                  tanggung jawab saya sesuai kesepakatan yang berlaku.
+                </p>
+                <p>
+                  Demikian surat pernyataan ini saya sampaikan. Terima kasih atas
+                  perhatian dan kerja sama yang telah diberikan.
+                </p>
+              </div>
+
+              <div class="letter-signoff">
+                <p>Hormat saya,</p>
+                <div class="signature-block">
+                  <img id="signatureImage" alt="Tanda tangan" class="signature-img" hidden />
+                  <p id="signerNameDisplay">Nama Penandatangan</p>
+                </div>
+                <p>Tanggal: <span id="letterDateDisplay">13-10-2026</span></p>
+                <p>Efektif sejak: <span id="effectiveDateDisplay">13-10-2026</span></p>
+              </div>
+            </article>
+          </div>
+
+          <button id="backToTop" class="back-to-top" type="button" aria-label="Kembali ke atas">
+            ↑
+          </button>
+        </section>
+
+        <section id="finance" class="finance-section container">
+          <div class="section-heading">
+            <p class="eyebrow">Transparansi</p>
+            <h3>Transparansi Keuangan</h3>
+            <p class="section-subtitle">
+              Ringkasan saldo dari rekening dan dompet digital yang saya pilih untuk
+              ditampilkan.
+            </p>
+          </div>
+
+          <div class="finance-overview">
+            <div class="overview-card total-card">
+              <p class="label">TOTAL SALDO YANG DITAMPILKAN</p>
+              <h4 id="totalBalance">Rp0</h4>
+              <span class="source-tag">Data netral pada versi publik</span>
+            </div>
+            <div class="overview-card info-card">
+              <p class="label">Catatan</p>
+              <p>
+                Saldo pribadi tidak ditampilkan pada versi publik. Data pribadi hanya
+                tersedia pada konfigurasi lokal di perangkat ini.
+              </p>
+            </div>
+          </div>
+
+          <div class="finance-grid">
+            <article class="balance-card" data-account="bca">
+              <div class="card-head">
+                <div class="bank-name">
+                  <span class="bank-badge bca">BCA</span>
+                  <span>Bank BCA</span>
+                </div>
+                <button class="toggle-visibility" type="button" aria-label="Sembunyikan saldo BCA">
+                  Tampilkan
+                </button>
+              </div>
+              <p class="balance-value" data-balance="bca">Rp0</p>
+              <div class="card-meta">
+                <small>Sumber data: kode</small>
+                <small>Update: konfigurasi kode</small>
+              </div>
+            </article>
+
+            <article class="balance-card" data-account="bni">
+              <div class="card-head">
+                <div class="bank-name">
+                  <span class="bank-badge bni">BNI</span>
+                  <span>Bank BNI</span>
+                </div>
+                <button class="toggle-visibility" type="button" aria-label="Sembunyikan saldo BNI">
+                  Tampilkan
+                </button>
+              </div>
+              <p class="balance-value" data-balance="bni">Rp0</p>
+              <div class="card-meta">
+                <small>Sumber data: kode</small>
+                <small>Update: konfigurasi kode</small>
+              </div>
+            </article>
+
+            <article class="balance-card" data-account="dana">
+              <div class="card-head">
+                <div class="bank-name">
+                  <span class="bank-badge dana">DANA</span>
+                  <span>DANA</span>
+                </div>
+                <button class="toggle-visibility" type="button" aria-label="Sembunyikan saldo DANA">
+                  Tampilkan
+                </button>
+              </div>
+              <p class="balance-value" data-balance="dana">Rp0</p>
+              <div class="card-meta">
+                <small>Sumber data: kode</small>
+                <small>Update: konfigurasi kode</small>
+              </div>
+            </article>
+
+            <article class="balance-card" data-account="gopay">
+              <div class="card-head">
+                <div class="bank-name">
+                  <span class="bank-badge gopay">GoPay</span>
+                  <span>GoPay</span>
+                </div>
+                <button class="toggle-visibility" type="button" aria-label="Sembunyikan saldo GoPay">
+                  Tampilkan
+                </button>
+              </div>
+              <p class="balance-value" data-balance="gopay">Rp0</p>
+              <div class="card-meta">
+                <small>Sumber data: kode</small>
+                <small>Update: konfigurasi kode</small>
+              </div>
+            </article>
+          </div>
+
+          <div class="spending-analysis">
+            <div class="spending-heading">
+              <p class="eyebrow">Dana Pribadi</p>
+              <h4>Analisis Pengeluaran Harian</h4>
+              <p id="spendingDescription">
+                Rincian pengeluaran dan pemasukan pribadi disembunyikan pada versi publik.
+              </p>
+            </div>
+
+            <div class="spending-summary" aria-label="Ringkasan pengeluaran dan pemasukan mingguan">
+              <article class="spending-stat">
+                <span>Pengeluaran per hari</span>
+                <strong id="dailyExpenseTotal">Rp80.000</strong>
+                <small id="dailyExpenseDetails">Rincian disembunyikan pada versi publik</small>
+              </article>
+              <article class="spending-stat">
+                <span>Pemasukan per minggu</span>
+                <strong id="weeklyIncomeTotal">Rp100.000</strong>
+                <small id="weeklyIncomeDetails">Rincian disembunyikan pada versi publik</small>
+              </article>
+              <article class="spending-stat">
+                <span>Pengeluaran per minggu</span>
+                <strong id="weeklyExpenseTotal">Rp560.000</strong>
+                <small id="weeklyExpenseDetails">Rincian disembunyikan pada versi publik</small>
+              </article>
+              <article class="spending-stat spending-deficit">
+                <span>Kekurangan per minggu</span>
+                <strong id="weeklyDeficitTotal">Rp460.000</strong>
+                <small id="weeklyDeficitDetails">Rincian disembunyikan pada versi publik</small>
+              </article>
+            </div>
+
+            <div class="spending-table-wrap">
+              <table class="spending-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Hari</th>
+                    <th scope="col">Pemasukan</th>
+                    <th scope="col">Pengeluaran</th>
+                    <th scope="col">Selisih</th>
+                  </tr>
+                </thead>
+                <tbody id="spendingBreakdown"></tbody>
+              </table>
+            </div>
+            <p class="spending-note" id="spendingNote">
+              Data pribadi disembunyikan pada versi publik.
+            </p>
+          </div>
+
+        </section>
+
+        <section id="statement" class="statement container">
+          <div class="statement-card">
+            <p class="eyebrow">Pernyataan</p>
+            <h3>Keputusan ini diambil demi keberlanjutan dan transparansi</h3>
+            <p>
+              Proyek Pinggir Coffee Shop tetap memerlukan perencanaan yang sehat,
+              dukungan anggaran yang realistis, serta kesepahaman yang jelas di antara
+              semua pihak terkait. Keputusan pengunduran diri ini dibuat dengan niat yang
+              profesional, penuh hormat, dan terbuka untuk evaluasi yang konstruktif.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>Pinggir Coffee Shop</p>
+          <p>Surat pengunduran diri • Transparansi keuangan • Keputusan profesional</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.protocol === 'file:') {
+        document.write('<script src="personal-overrides.js"><\/script>');
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
